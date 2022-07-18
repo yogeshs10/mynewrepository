@@ -1,6 +1,3 @@
-
-// Account Trigger
-
 trigger AccAddress on Account (before insert) {
     
     for (Account actNew :Trigger.New){
@@ -13,4 +10,3 @@ trigger AccAddress on Account (before insert) {
 	}
 
 }
-
