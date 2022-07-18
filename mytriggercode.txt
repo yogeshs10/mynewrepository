@@ -1,4 +1,5 @@
-// Account Address Trigger
+
+// Account Trigger
 
 trigger AccAddress on Account (before insert) {
     
@@ -12,3 +13,4 @@ trigger AccAddress on Account (before insert) {
 	}
 
 }
+
