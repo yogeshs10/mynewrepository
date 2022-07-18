@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
+//Test class
+
 @isTest(seealldata=false)
-public class TestforAccAddress {
-=======
-// Account Trigger
-trigger AccAddress on Account (before insert) {
->>>>>>> Stashed changes
-    
+      public class TestforAccAddress { 
     static testMethod void testMethod1(){
         account ac1 = new account ();
         ac1.name = 'test1';
@@ -21,19 +17,3 @@ trigger AccAddress on Account (before insert) {
     }
 
 }
-
-// Here is my Account Trigger
-
-trigger AccAddress on Account (before insert) {
-    
-    for (Account actNew :Trigger.New){
-		
-		actNew.ShippingStreet = actNew.BillingStreet;
-        actNew.ShippingCity = actNew.BillingCity;
-        actNew.ShippingCountry = actNew.BillingCountry;
-		
-  
-	}
-
-}
-
