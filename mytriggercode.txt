@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 @isTest(seealldata=false)
 public class TestforAccAddress {
+=======
+// Account Trigger
+trigger AccAddress on Account (before insert) {
+>>>>>>> Stashed changes
     
     static testMethod void testMethod1(){
         account ac1 = new account ();
